@@ -1,0 +1,377 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Open Sans";
+}
+
+.container{
+    max-width: 1280px;
+    padding: 0 2%;
+    margin: 0 auto;
+}
+
+input:focus,
+textarea:focus{
+	outline: none;
+}
+
+input[type=submit],
+input[type=text],
+input[type=email],
+textarea{
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+body{
+    overflow-x: hidden;
+    background-color: white;
+}
+
+.clear{
+    clear: both;
+}
+
+.overlay{
+	width: 100%;
+	height: 750px;
+	position: absolute;
+	z-index: 1;
+	top: 100px;
+	left: 0;
+	background-color: rgba(20,20,20,0.6);
+}
+
+header{
+    z-index: 999;
+    background-color: rgb(220, 220, 220);
+    padding: 50px 0;
+}
+
+.menu-header{
+    position: relative;
+    top: -15px;
+    z-index: 3;
+}
+
+.logo{
+    position: relative;
+    top: -80px;
+	z-index: 2;
+	background-image: url('../img/final2.png');
+	background-size: 100% 100%;
+	float: left;
+	width: 200px;
+	height: 150px;
+}
+
+nav.desktop{
+	float: right;
+}
+
+nav.desktop ul{
+    list-style-type: none;
+}
+
+nav.desktop ul li{
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav.desktop ul li a{
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+nav li.btn-menu-header{
+    border: 1px solid black;
+    padding: 3px 6px;
+    border-radius: 20px;
+}
+
+nav.mobile{
+    display: none;
+    float: right;
+}
+
+nav.mobile ul{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    padding: 0 0 10px 0;
+    top: 55px;
+    background-color: rgb(220,220,220);
+    display: none;
+	text-align: center;
+}
+
+nav.mobile h3{
+    position: relative;
+    z-index: 2;
+    color: black;
+    cursor: pointer;
+    font-size: 26px;
+}
+
+nav.mobile li{
+	padding: 10px 0;
+	border-bottom: 1px solid black;
+}
+
+nav.mobile li.btn-menu-header{
+	margin-top: 10px;
+    padding: 4px 10px;
+    display: inline-block;
+}
+
+nav.mobile a{
+    display: block;
+    color: black;
+    text-decoration: none;
+}
+
+section.topo{
+    background-image: url('../img/bg1.jpg');
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 750px;
+}
+
+.chamada-header{
+    text-align: center;
+    padding: 300px 0;
+    position: relative;
+    z-index: 3;
+}
+
+.chamada-header h2{
+    font-size: 76px;
+    color: white;
+    font-weight: 400;
+}
+
+.chamada-header h2 > b{
+    color: #2692ff
+}
+
+.chamada-servicos{
+	width: 100%;
+	text-align: center;
+	padding:27px 2%;
+	background-color: rgb(220,220,220);
+}
+
+.chamada-servicos h2{
+	display: inline-block;
+	border-top: 2px solid #2692FF;
+	color: #2692FF;
+	text-transform: uppercase;
+	font-weight: lighter;
+	font-size: 25px;
+}
+
+.box-servicos{
+    padding: 40px 0;
+}
+
+.box-servicos > .container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box-servicos-single{
+    width: 33.3%;
+    padding: 0 40px;
+}
+
+.box-servicos-wraper{
+    width: 100%;
+    -webkit-box-shadow: 10px 9px 5px -8px rgba(0,0,0,0.75);
+	-moz-box-shadow: 10px 9px 5px -8px rgba(0,0,0,0.75);
+    box-shadow: 10px 9px 5px -8px rgba(0,0,0,0.75);
+    border: 1px solid #cccccc;
+    min-height: 300px;
+}
+
+.box-servicos-single h2{
+    background-color: #2692FF;
+    color: white;
+    text-align: center;
+    padding: 3px;
+    font-weight: 300;
+}
+
+.pontos-servicos{
+    padding: 8px 0 15px 0;
+}
+
+.box-servicos-single p{
+    margin-left: 20px;
+    color: #777777;
+    font-size: 17px;
+    margin-top: 8px;
+}
+
+section.parallax{
+	position: relative;
+	width: 100%;
+	padding: 40px 0;
+	min-height: 300px;
+	background-image: url('../img/bg.png');
+	background-size: cover;
+	background-attachment: fixed;
+    background-position: center;
+}
+
+section.parallax > .container{
+	position: relative;
+	z-index: 2;
+	max-width: 960px;
+	color: white;
+}
+
+section.parallax h2{
+    font-weight: 300;
+	text-align: center;
+}
+
+section.parallax h2 > span{
+    color: #2692ff;
+}
+
+section.parallax p{
+    font-weight: 300;
+	margin-top: 15px;
+}
+
+.overlay-parallax{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: rgba(20,20,20,0.6);
+}
+
+section.contato{
+    padding: 40px 0;
+}
+
+section.contato h2{
+    position: relative;
+    font-weight: 300;
+    color: #777777;
+    font: 24px;
+}
+
+section.contato h2 > .border-efeito-contato{
+    width: 55px;
+    height: 2px;
+    background-color: #777777;
+    position: absolute;
+    transition: 0.4s;
+}
+
+section.contato h2:hover > .border-efeito-contato{
+    width: 100%;
+}
+
+.formulario form{
+    margin-top: 15px;
+}
+
+.formulario input:not([type=submit]){
+	width: 100%;
+	height: 40px;
+	font-size: 15px;
+	border: 1px solid #ccc;
+	display: block;
+	padding-left: 8px;
+	margin-top: 10px;
+}
+
+.formulario textarea{
+	font-size: 15px;
+	width: 100%;
+	height: 120px;
+	border: 1px solid #cccccc;
+	padding: 8px;
+	margin-top: 10px;
+	resize: none;
+}
+
+.formulario input[type=submit]{
+	font-size: 15px;
+	cursor: pointer;
+	background-color: #2693FF;
+	color: white;
+	border: 0;
+	width: 100px;
+	padding: 8px;
+	border-radius: 30px;
+	margin-top: 15px;
+}
+
+.formulario a{
+	text-decoration: none;
+	font-size: 15px;
+	cursor: pointer;
+	background-color: #34af23;
+	color: white;
+	border: 0;
+	width: 120px;
+	padding: 8px;
+	border-radius: 30px;
+	margin-top: 15px;
+	margin-left: 30px;
+}
+
+footer{
+	background-color: rgb(220,220,220);
+	padding: 20px 0;
+}
+
+footer p{
+    font-weight: 400;
+    text-align: center;
+    font-size: 18px;
+}
+
+@media screen and (max-width: 768px){
+	nav.mobile{
+        display: block;
+	}
+
+	nav li.btn-nav{
+		border: 1px solid black;
+	}
+
+	nav.desktop{
+		display: none;
+    }
+    
+    section.topo .chamada-header{
+        font-size: 40px;
+    }
+
+	.w50{
+		width: 100%;
+	}
+
+	.box-servicos-single{
+		width: 100%;
+		margin: 10px 0;
+    }
+
+    .chamada-header h2{
+        font-size: 48px;
+    }
+
+    footer p{
+        font-size: 14px;
+    }
+}
